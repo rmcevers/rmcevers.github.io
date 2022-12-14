@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title> Game Over </title>
+      <script src="https://simplycodingcourses.com/files/simplyjs/simply.js"></script>
+      <script>
+        function start(){
+          sjs.open();
+          
+      //gameover text
+      var gameover = new sjs.Text("Its pong... single player pong...", 30, "black")
+          gameover.centerH().offset(0,60)
+      
+      //restart button
+      
+      var playAgainBtn = new sjs.Button("Play Again?", function(){
+        window.location = "pongindex.html"
+      })
+          playAgainBtn.center()
+          
+        } //end start
+      </script>
+  </head>
+    <body onload="start()">
+      <h1> Game Over! </h1>
+
+        <div id="target" style="margin:auto;background:grey;"></div>
+    </body>
+</html>

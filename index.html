@@ -1,0 +1,33 @@
+<html>
+  <head>
+    <title> Menu </title>
+  <script src="https://simplycodingcourses.com/files/simplyjs/simply.js">
+</script>
+    <script>
+      function start(){
+      
+      sjs.open("target",500,400)
+        
+        var menu = new sjs.Text("Menu", 30, "black")
+         menu.centerH()
+  
+        var instructions = new sjs.Text("To play the game use the arrow keys to move the paddles and hit the ball to rack up points!",20,"black")
+          instructions.centerH().offset(0,60)
+  
+        var button = new sjs.Button("Start", function(){
+           window.location = "pong.html"
+          })
+          button.centerH().offset(0,125)
+    
+        var creatorTag = new sjs.Text("Created By Ryan McEvers", 15, "black")
+          creatorTag.bottom().center()
+
+    } //end start
+    </script>
+  </head>
+  <body onload = "start();">
+    <h1> Menu </h1>
+
+    <div id="target" style="margin:auto;background:grey;"></div>
+  </body>
+</html>
